@@ -118,7 +118,7 @@ jobs:
             cp README.md "${stage}/${pkg}/" 2>/dev/null || true
             cp LICENSE "${stage}/${pkg}/" 2>/dev/null || true
             if [[ "${kind}" == "zip" ]]; then
-              (cd "${stage}" && zip -r -9 "../../pkg/${pkg}.zip" "${pkg}")
+              (cd "${stage}" && zip -r -9 "../pkg/${pkg}.zip" "${pkg}")
             else
               tar -czf "dist-release/pkg/${pkg}.tar.gz" -C "${stage}" "${pkg}"
             fi
