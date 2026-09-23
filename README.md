@@ -251,7 +251,7 @@ go build -trimpath -ldflags="-s -w" -o wb2api.exe ./cmd/server
 
 ```bash
 # macOS：下载对应架构的 tar.gz（Intel 选 amd64，M 系列选 arm64），或从源码构建
-tar -xzf wb2api-v1.11.1-darwin-arm64.tar.gz && cd wb2api-v1.11.1-darwin-arm64
+tar -xzf wb2api-v1.11.7-darwin-arm64.tar.gz && cd wb2api-v1.11.7-darwin-arm64
 # GOOS=darwin GOARCH=arm64 CGO_ENABLED=0 go build -trimpath -ldflags="-s -w" -o wb2api ./cmd/server
 
 # 首次运行需去隔离属性（未签名二进制会被 Gatekeeper 拦截），之后直接运行
